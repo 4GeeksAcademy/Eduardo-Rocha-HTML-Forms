@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>HTML Form</title>
 </head>
 <body>
-    <div class="py-5" style="background-color: black">
-        <div class="col-8 mx-auto my-5 bg-body">
+    <div class="py-5 px-5" style="background-color: black">
+        <div class="col-8 mx-auto my-auto bg-body">
             <div class="card">
                 <div class="card-header">
                     <h3>Payment for example</h3>
                 </div>
                 <div class="card-body">
                     <form>
-                        <div class="input-group mb-3">
-                            <div class="col mx-1">
+                        <div class="input-group my-3">
+                            <div class="col me-4">
                                 <label for="Card#" class="form-label">Card #</label>
                                 <input type="text" class="form-control" placeholder="XXXXXXXXXXXXX" id="Card#">  
                             </div>
-                            <div class="col mx-1">
+                            <div class="col me-4">
                                 <label for="CVC#" class="form-label">CVC #</label>
                                 <input type="text" class="form-control" placeholder="XXX" id="CVC#">  
                             </div>
-                            <div class="col mx-1">
+                            <div class="col">
                                 <label for="Amount" class="form-label">Amount</label>
                                 <div class="row col g-1 align-items-center">
                                     <div class="col-auto">
@@ -66,8 +67,41 @@
                                 <input type="text" class="form-control" id="PostalCode">
                             </div>
                         </div> 
-
-                        
+                        <div class="input-group mb-3">
+                            <div class="col mx-1">
+                                <label for="PaymentType" class="form-label">We accept:</label>
+                                    <div class="col-8 py-2 ps-2 bg-secondary rounded justify-content-center">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType1" value="option1">
+                                            <label class="form-check-label" for="PaymentType1">
+                                                <i class="fa-brands fa-cc-mastercard fa-xl" style="color: white"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">
+                                                <i class="fa-brands fa-cc-visa fa-xl" style="color: white"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType3" value="option3">
+                                            <label class="form-check-label" for="PaymentType">
+                                                <i class="fa-brands fa-cc-diners-club fa-xl" style="color: white"></i>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType4" value="option4">
+                                            <label class="form-check-label" for="PaymentType">
+                                                <i class="fa-brands fa-cc-amex fa-xl" style="color: white"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="card-footer d-flex justify-content-end">
