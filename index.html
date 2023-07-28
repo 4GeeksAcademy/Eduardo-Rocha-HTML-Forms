@@ -15,18 +15,18 @@
                 <!--Form title-->            
                 <h3 class="card-header">Payment for example</h3>
                 <!--Form alert-->
-                <div class="mb-3 col-12">
-                    <div class="invalid-feedback">
-                        <div class="alert alert-danger" role="alert">Some fields are missing</div>
+                <div class="row mb-3">
+                    <div class="col invalid-feedback mb-3">
+                        <!--div class="alert alert-danger" role="alert">Some fields are missing</div-->
                     </div>
                 </div>
                 <!--Form 1st row-->
-                <div class="mb-3 card-body col-12 input-group has-validation">
-                    <div class="col me-4">
+                <div class="row mb-3 card-body col-12 input-group has-validation">
+                    <div class="col-5">
                         <label for="Card#" class="form-label">Card #</label>
                         <input type="number" class="form-control" placeholder="XXXXXXXXXXXXX" id="Card#" required>  
                     </div>
-                    <div class="col me-4">
+                    <div class="col-3">
                         <label for="CVC#" class="form-label">CVC #</label>
                         <input type="number" class="form-control" placeholder="XXX" id="CVC#" required>  
                     </div>
@@ -43,8 +43,8 @@
                     </div>
                 </div>                   
                 <!--Form 2nd row-->    
-                <div class="input-group mb-3 has-validation">
-                    <div class="col mb-3 mx-1">
+                <div class="row input-group mb-3 has-validation">
+                    <div class="col-6 mb-3 mx-1">
                         <label for="FirstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="FirstName" required>
                     </div>
@@ -54,8 +54,8 @@
                     </div>
                 </div>
                 <!--Form 3rd row-->    
-                <div class="input-group mb-3">
-                    <div class="col mx-1">
+                <div class="row input-group mb-3">
+                    <div class="col-6 mx-1">
                         <label for="City" class="form-label">City</label>
                         <input type="text" class="form-control" id="City">  
                     </div>
@@ -74,10 +74,10 @@
                     </div>
                 </div>     
                 <!--Form 4th row-->    
-                <div class="input-group mb-3">
+                <div class="row input-group mb-3">
                     <div class="col mx-1">
                         <label for="PaymentType" class="form-label">We accept:</label>
-                            <div class="col-8 py-2 ps-2 bg-secondary rounded justify-content-center">
+                            <div class="col-7 py-2 px-1 bg-secondary rounded d-flex justify-content-center">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType1" value="option1">
                                     <label class="form-check-label" for="PaymentType1">
