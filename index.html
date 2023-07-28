@@ -11,17 +11,15 @@
 <body class="bg-dark">
     <div class="container p-auto">
         <div class="card col-10 mx-auto bg-body d-flex justify-content-center">
-            <form class="row g-3 needs-validation" novalidate> 
+            <form class="row g-3"> 
                 <!--Form title-->            
                 <h3 class="card-header">Payment for example</h3>
-                <!--Form alert-->
-                <div class="row mb-3">
-                    <div class="col invalid-feedback mb-3">
-                        <!--div class="alert alert-danger" role="alert">Some fields are missing</div-->
-                    </div>
-                </div>
+                <!--Form alert
+                
+                This type of form alert with alert message is currently not working on bootstrap, opted to go with "Browser default"" option-->
+                
                 <!--Form 1st row-->
-                <div class="row mb-3 card-body col-12 input-group has-validation">
+                <div class="row mb-3 card-body col-12 input-group">
                     <div class="col-5">
                         <label for="Card#" class="form-label">Card #</label>
                         <input type="number" class="form-control" placeholder="XXXXXXXXXXXXX" id="Card#" required>  
@@ -43,7 +41,7 @@
                     </div>
                 </div>                   
                 <!--Form 2nd row-->    
-                <div class="row input-group mb-3 has-validation">
+                <div class="row input-group mb-3">
                     <div class="col-6 mb-3 mx-1">
                         <label for="FirstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="FirstName" required>
@@ -55,56 +53,56 @@
                 </div>
                 <!--Form 3rd row-->    
                 <div class="row input-group mb-3">
-                    <div class="col-6 mx-1">
+                    <div class="col-6 mb-3 mx-1">
                         <label for="City" class="form-label">City</label>
-                        <input type="text" class="form-control" id="City">  
+                        <input type="text" class="form-control" id="City" required>  
                     </div>
-                    <div class="col mx-1">
+                    <div class="col mb-3 mx-1">
                         <label for="State" class="form-label">State</label>
-                        <select class="form-select" id="State" placeholder="Pick a state">
+                        <select class="form-select" id="State" placeholder="Pick a state" required>
                             <option selected></option>
                             <option value="1">State A</option>
                             <option value="2">State B</option>
                             <option value="3">State C</option>
                         </select>  
                     </div>
-                    <div class="col mx-1">
+                    <div class="col mb-3 mx-1">
                         <label for="PostalCode" class="form-label">Postal Code</label>
-                        <input type="text" class="form-control" id="PostalCode">
+                        <input type="text" class="form-control" id="PostalCode" required>
                     </div>
                 </div>     
                 <!--Form 4th row-->    
-                <div class="row input-group mb-3">
-                    <div class="col mx-1">
+                <div class="row input-group mb-3 justify-content-between">
+                    <div class="col-5 mb-3 ms-1">
                         <label for="PaymentType" class="form-label">We accept:</label>
-                            <div class="col-7 py-2 px-1 bg-secondary rounded d-flex justify-content-center">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType1" value="option1">
-                                    <label class="form-check-label" for="PaymentType1">
-                                        <i class="fa-brands fa-cc-mastercard fa-xl" style="color: white"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">
-                                        <i class="fa-brands fa-cc-visa fa-xl" style="color: white"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType3" value="option3">
-                                    <label class="form-check-label" for="PaymentType">
-                                        <i class="fa-brands fa-cc-diners-club fa-xl" style="color: white"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType4" value="option4">
-                                    <label class="form-check-label" for="PaymentType">
-                                        <i class="fa-brands fa-cc-amex fa-xl" style="color: white"></i>
-                                    </label>
-                                </div>
+                        <div class="ps-1 py-2 bg-secondary rounded justify-content-center" required>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType1" value="option1">
+                                <label class="form-check-label" for="PaymentType1">
+                                    <i class="fa-brands fa-cc-mastercard fa-xl" style="color: white"></i>
+                                </label>
                             </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">
+                                    <i class="fa-brands fa-cc-visa fa-xl" style="color: white"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType3" value="option3">
+                                <label class="form-check-label" for="PaymentType">
+                                    <i class="fa-brands fa-cc-diners-club fa-xl" style="color: white"></i>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="PaymentType" id="PaymentType4" value="option4">
+                                <label class="form-check-label" for="PaymentType">
+                                    <i class="fa-brands fa-cc-amex fa-xl" style="color: white"></i>
+                                </label>
+                            </div>    
+                        </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col-6 ps-4 mb-3">
                         <label for="TextMessage" class="form-label">Message</label>
                         <textarea class="form-control" id="TextMessage" rows="3"></textarea>
                     </div>
